@@ -1,0 +1,25 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "integrating airpnp components",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "reservation": "node ../reservation-service/server/index.js",
+    "hero": "node ../hero-photo-service/server/server.js",
+    "about": "node ../about-service/server/server.js",
+    "review": "node ../Review-service/server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.18.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-connect-proxy": "^0.2.0",
+    "grunt-contrib-connect": "^1.0.2"
+  }
+}
